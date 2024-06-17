@@ -64,7 +64,8 @@ x-airflow-common:
     AIRFLOW__SMTP__SMTP_HOST: 'smtp.gmail.com'
     AIRFLOW__SMTP__SMTP_USER: '{mvp0340@gmail.com}' 
     AIRFLOW__SMTP__SMTP_PASSWORD: '##SMTP_PASSWORD##'
-    AIRFLOW__SMTP__SMTP_PORT: 587 AIRFLOW__SMTP__SMTP_MAIL_FROM: '{mvp0340@gmail.com}'
+    AIRFLOW__SMTP__SMTP_PORT: 587
+    AIRFLOW__SMTP__SMTP_MAIL_FROM: '{mvp0340@gmail.com}'
     # yamllint disable rule:line-length
     # Use simple http server on scheduler for health checks
     # See https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/logging-monitoring/check-health.html#scheduler-health-check-server
