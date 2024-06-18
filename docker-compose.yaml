@@ -142,7 +142,7 @@ services:
     restart: always
     networks:
       network_custom:
-        ipv4_address: 172.28.0.4
+        ipv4_address: 172.28.0.5
 
   airflow-webserver:
     <<: *airflow-common
@@ -180,7 +180,7 @@ services:
         condition: service_completed_successfully
     networks:
       network_custom:
-        ipv4_address: 172.28.0.4
+        ipv4_address: 172.28.0.5
 
   airflow-worker:
     <<: *airflow-common
@@ -206,7 +206,7 @@ services:
         condition: service_completed_successfully
     networks:
       network_custom:
-        ipv4_address: 172.28.0.4
+        ipv4_address: 172.28.0.6
 
   airflow-triggerer:
     <<: *airflow-common
@@ -224,7 +224,7 @@ services:
         condition: service_completed_successfully
     networks:
       network_custom:
-        ipv4_address: 172.28.0.4
+        ipv4_address: 172.28.0.7
 
   airflow-init:
     <<: *airflow-common
@@ -291,7 +291,7 @@ services:
       - ${AIRFLOW_PROJ_DIR:-.}:/sources
     networks:
       network_custom:
-        ipv4_address: 172.28.0.4
+        ipv4_address: 172.28.0.8
 
   airflow-cli:
     <<: *airflow-common
